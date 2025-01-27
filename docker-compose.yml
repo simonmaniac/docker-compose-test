@@ -10,7 +10,8 @@ services:
         NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
     restart: always
     ports:
-      - 3000
+      - 3080:80
+      - 3443:443
     networks:
       - dokploy-network
   # Add more containers below (nginx, postgres, etc.)
